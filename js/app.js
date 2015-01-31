@@ -19,11 +19,11 @@ app.config(['$routeProvider', function ($routeProvider) {
             hideMenus: true
         })
          .when('/videos',{
-                templateUrl: 'partials/videos.tpl.html',
+                templateUrl: 'partials/videos/videos.tpl.html',
                 controller: 'VideosController'
         })
         .when('/manual_tag',{
-                templateUrl: 'partials/manual_tag.tpl.html',
+                templateUrl: 'partials/manual_tag/manual_tag.tpl.html',
                 controller: 'ManualTagController'
         })
         .when('/', {
