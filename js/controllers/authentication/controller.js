@@ -14,7 +14,7 @@ authentication.controller('LoginController',
             
                 if(response.success) {
                     AuthenticationService.SetCredentials($scope.username, $scope.password);
-                    $location.path('/');
+                      window.location = 'app.html';
                 } else {
                     $scope.error = response.message;
                     $scope.dataLoading = false;
